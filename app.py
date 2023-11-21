@@ -29,7 +29,7 @@ app = Flask(__name__)
 def index():
     return "welcome to xander API" #display text on main page
 
-@app.rout('/get',methods=['GET'])
+@app.route('/get',methods=['GET'])
 def get():
 
     exchange_data = requests.get(EXCHANGE_URL,EXCHANGE_PARAMS)
